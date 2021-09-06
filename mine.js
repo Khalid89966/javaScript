@@ -52,15 +52,23 @@ if(Quantity > 5){
 
 BookStore[2][4]= 3
 
-//let customerPrice = 250
 
-//if(customerPrice < 50){
- //   console.log('Sorry your price is not enough to buy ' ); 
-//}else{
-   // console.log('Welcome to my BookStore');
-//}
-function add (firstNumber , secondNumber){
-    console.log(firstNumber + secondNumber);
+function add (Book , boook){
+    
+    return Book +boook
 }
 
-add('Clean ','Cod')
+let value = add('Clean ','Cod')
+console.log(value);
+
+
+
+let customerPrice = 250
+
+if(customerPrice < 50){
+    console.log('Sorry your price is not enough to buy ' ); 
+}else{
+    console.log('Thank you for buying the Books');
+    console.log('You now have tow copies of the clean cod book');
+    console.log('Yhank you payment been made');
+}

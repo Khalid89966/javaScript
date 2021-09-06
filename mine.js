@@ -1,6 +1,9 @@
 //  Book id  - Book Title -     Author -   Price - Quantity
 //   0              1              2         3        4
 
+
+//STEP 1
+
 const BookStore = [
 [1,'Start with why','Simon Sinek',80.0,13 ],
 [2,'But how do it','J.clark scott',59.9,22],
@@ -12,11 +15,10 @@ const BookStore = [
 
 
 for(let Books of BookStore){
-    console.log(Books);
-}
+    console.log(Books);}
 
 
-
+//STEP 2
 
  
 
@@ -41,7 +43,7 @@ switch(BooksInformation){
 
 }
  
-
+//STEP 3
 
 
 

@@ -20,8 +20,8 @@ for(let Books of BookStore){
 
  
 
- let PriceBooks = 1
-switch(PriceBooks){
+ let BooksInformation = 1
+switch(BooksInformation){
      case 1: 
     console.log(BookStore[2][0]);
      
@@ -30,9 +30,9 @@ switch(PriceBooks){
      
      case 3:
      console.log(BookStore[2][2]);
-     break
+     
      case 4:
-     console.log(BookStore[3][3]);
+     console.log(BookStore[2][4]);
      break
      case 5:
     console.log(BookStore[4][3]);
@@ -42,33 +42,38 @@ switch(PriceBooks){
 }
  
 
-console.log(BookStore[2][4]);
+
+
+
+let CleanCod = 2
+if(CleanCod < 5){
+    console.log('This book is availble');
+}else if(CleanCod > 5  ){
+    console.log('Sorry quantity this book not avalible');
+}
+
 let Quantity = 2
 if(Quantity > 5){
     console.log('Sorry, this quantity is not available');
 }else{
-    console.log('Quantity is available');
+    console.log('Quantity is available 5');
 }
 
-BookStore[2][4]= 3
 
 
-function add (Book , boook){
-    
-    return Book +boook
-}
 
-let value = add('Clean ','Cod')
-console.log(value);
+
 
 
 
 let customerPrice = 250
 
-if(customerPrice < 50){
+if(customerPrice < 100){
     console.log('Sorry your price is not enough to buy ' ); 
-}else{
-    console.log('Thank you for buying the Books');
-    console.log('You now have tow copies of the clean cod book');
-    console.log('Yhank you payment been made');
+}else if(customerPrice > 100){
+    console.log('Your balance is sufficient to purchase the required quantity');
+  
 }
+BookStore[2][4]= 5-2
+console.log(BookStore);
+
